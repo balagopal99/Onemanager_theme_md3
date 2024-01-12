@@ -612,7 +612,7 @@
 <!--LoginStart-->
             <div class="pull_title" onclick="change_page_to(1)">
                 <span class="material-icons">account_circle</span>
-                <div>登录</div>
+                <div>Login</div>
             </div>
 <!--LoginEnd-->
         </nav>
@@ -658,14 +658,14 @@
             </div>
 <!--HeadmdEnd-->
 
-<!-- 加密文件夹 -->
+<!-- Encrypted Folder -->
 <!--EncryptedStart-->
             <div class="main-item-list" id="imgFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                加密文件夹
+                Encrypted Folder
             </div>
 
             <form id="need—pw-div" action="" method="post">
-                <input id="password2" name="password1" type="password" placeholder="请输入文件夹密码">
+                <input id="password2" name="password1" type="password" placeholder="Enter Password">
                 <input type="submit" value="确认">
                 <span class="material-symbols-outlined">send</span>
             </form>
@@ -682,10 +682,10 @@
                 <div id="upload_div">
                     <div id="upload_btns" align="center">
                         <select onchange="document.getElementById('upload_file').webkitdirectory=this.value;">
-                            <option value="">文件</option>
-                            <option value="1">文件夹</option>
+                            <option value="">File</option>
+                            <option value="1">Folder</option>
                         </select>
-                        <div id="upload_file_bu">上传文件<input id="upload_file" type="file" name="upload_filename" multiple="multiple"></div>
+                        <div id="upload_file_bu">Upload<input id="upload_file" type="file" name="upload_filename" multiple="multiple"></div>
                         <input id="upload_submit" onclick="preup();" value="上传" type="button">
                     </div>
                 </div>
@@ -696,7 +696,7 @@
 <!--IsFileStart-->
 <!--IsimgFileStart-->
             <div class="main-item-list" id="imgFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                图片预览
+                Image Preview
             </div>
             <div class="main-item-new" id="imgFil-div" style="padding: 0;overflow: hidden;">
                 <img src="<!--FileDownUrl-->" alt="<!--FileName-->" onload="if (this.offsetWidth>document.getElementById('url').offsetWidth) this.style.width='100%';" />
@@ -705,7 +705,7 @@
 
 <!--IsvideoFileStart-->
             <div class="main-item-list" id="videoFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                视频预览
+                Video Preview
             </div>
             <div class="main-item-new" id="videoFil-div" style="padding: 0;overflow: hidden;">
                 <div id="video-a0"></div>
@@ -714,7 +714,7 @@
 
 <!--IspdfFileStart-->
             <div class="main-item-list" id="pdfFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                文档预览
+                Document Preview
             </div>
             <div class="main-item-new" id="pdfFil-div" style="padding: 20px;overflow: hidden;">
                 <div id="pdf-d">少女折寿中 ... ...</div>
@@ -723,7 +723,7 @@
 
 <!--IsmusicFileStart-->
             <div class="main-item-list" id="musFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                音频预览
+                Audio Preview
             </div>
             <div class="main-item-list" id="musFil-div" style="padding: 15px;overflow: hidden;">
                 <audio src="<!--FileDownUrl-->" controls="controls" style="width: 100%"></audio>
@@ -732,7 +732,7 @@
 
 <!--IstxtFileStart-->
             <div class="main-item-list" id="txtFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                文本预览
+                Text Preview
             </div>
             <div class="main-item-list" id="txtFil-div">
                 <textarea id="txt-a" name="editfile" readonly><!--TxtContent--></textarea>
@@ -740,17 +740,17 @@
 <!--IstxtFileEnd-->
 <!--IsFileEnd-->
 
-<!-- 文件下载 -->
+<!-- Download File -->
 <!--IsFileStart-->
             <div class="main-item-list" id="videoFil-div" style="padding: 15px 30px; font-size: larger; font-weight: bold;">
-                文件下载
+                Download File
             </div>
             <div class="main-item-list">
                 <div id="download">
                         <textarea id="url" title="url" rows="5" cols="33" readonly><!--FileEncodeUrl--></textarea>
                         <div id="download_bu">
-                            <button id="download_1" onclick="navigator.clipboard.writeText(document.querySelector('#url').innerHTML)">复制链接</button>
-                            <button id="download_2" onclick="window.location.href = '<!--FileEncodeUrl-->'">点击下载</button>
+                            <button id="download_1" onclick="navigator.clipboard.writeText(document.querySelector('#url').innerHTML)">Copy Link</button>
+                            <button id="download_2" onclick="window.location.href = '<!--FileEncodeUrl-->'">Download</button>
                         </div>
                 </div>
             </div>
@@ -847,7 +847,7 @@
                 </div>
                 <script>
                     let year = new Date().getFullYear()
-                    document.querySelector("#foot_info").innerHTML='Copyright © ' + year + ' | Powered by <a href="https://github.com/qkqpttgf/OneManager-php/">Onemanager</a> |   <a href="https://github.com/lswlc33/Onemanager_theme_new_onedrive/">Theme</a> by <a href="https://github.com/lswlc33/">雪中明月</a>'
+                    document.querySelector("#foot_info").innerHTML='Copyright © ' + year + ' | Powered by <a href="https://github.com/qkqpttgf/OneManager-php/">Onemanager</a> |   <a href="https://github.com/lswlc33/Onemanager_theme_new_onedrive/">Theme</a> by <a href="https://github.com/lswlc33/">lswlc33</a>'
                 </script>
             </div>
         </div>
